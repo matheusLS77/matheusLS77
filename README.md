@@ -1,32 +1,75 @@
-# 👋 Hello!
- My name is Matheus.
+```markdown
+<h1 align="center">>_ Matheus</h1>
 
- **>📚I’m currently learning:**
+<p align="center">
+backend.dev | java student
+</p>
 
-[![My Skills](https://skillicons.dev/icons?i=java)](https://skillicons.dev)
+<p align="center">
+<img src="https://readme-typing-svg.herokuapp.com/?color=00FF9C&size=22&center=true&vCenter=true&width=600&lines=booting+developer+profile...;loading+java+modules...;learning+spring+boot...;building+backend+skills...">
+</p>
 
-⭐ **GitHub Stats**
+---
 
-[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=nononozero)](https://github.com/nononozero/github-readme-stats)
+```
 
-## **🔎Where to find me**
+$ whoami
+dev_student
 
-<div>
-<a href="https://instagram.com/seu-usuário-instagram-aqui" target="_blank"><img loading="lazy" src="https://img.shields.io/badge/-Instagram-%23E4405F?style=for-the-badge&logo=instagram&logoColor=white" target="_blank"></a>
-<a href = "mailto:contato@seu-usuário-aqui"><img loading="lazy" src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white" target="_blank"></a>
-<a href="https://www.linkedin.com/in/seu-usuário-linkedln-aqui" target="_blank"><img loading="lazy" src="https://img.shields.io/badge/-LinkedIn-%230077B5?style=for-the-badge&logo=linkedin&logoColor=white" target="_blank"></a>   
+$ stack
+java
+spring boot
+sql
 
+$ status
+learning...
 
-<!--
-**nononozero/nononozero** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
-Here are some ideas to get you started:
+```
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+---
+
+### ⚡ tech
+
+<p align="center">
+<img src="https://skillicons.dev/icons?i=java,spring,mysql,git,github,vscode"/>
+</p>
+
+---
+
+### 📊 system stats
+
+<p align="center">
+<img height="170" src="https://github-readme-stats.vercel.app/api?username=matheusLS77&show_icons=true&theme=tokyonight&hide_border=true&bg_color=00000000"/>
+<img height="170" src="https://github-readme-stats.vercel.app/api/top-langs/?username=matheusLS77&layout=compact&theme=tokyonight&hide_border=true&bg_color=00000000"/>
+</p>
+
+---
+
+### 🐍 activity
+
+<p align="center">
+<img src="https://github.com/matheusLS77/matheusLS77/blob/output/github-contribution-grid-snake-dark.svg">
+</p>
+
+---
+
+### 💻 terminal.log
+
+```
+
+booting system...
+
+loading java runtime...
+loading spring modules...
+
+developer mode: ON
+backend learning: ACTIVE
+
+status: ONLINE
+
+```
+
+<p align="center">
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0f2027,100:00ff9c&height=120&section=footer"/>
+</p>
+```
