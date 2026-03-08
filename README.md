@@ -30,6 +30,7 @@
   <img src="https://github-readme-streak-stats.herokuapp.com/?user=matheusLS77&theme=dark" alt="GitHub Streak"/>
 </p>
 
+![snake gif](https://github.com/matheusLS77/matheusLS77/blob/output/github-snake-dark.svg)
 ---
 
 ### 📫 Connect with Me
