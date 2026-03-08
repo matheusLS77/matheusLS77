@@ -20,8 +20,14 @@
 
 ---
 
+### 📊 GitHub Stats
+
 <p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=matheusLS77&show_icons=true&theme=dark&count_private=true" alt="Matheus GitHub Stats"/>
+  <img src="https://github-readme-streak-stats.herokuapp.com/?user=matheusLS77&theme=dark" alt="GitHub Streak"/>
+</p>
+
+<p align="center">
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=matheusLS77&layout=compact&theme=dark" alt="Top Languages"/>
 </p>
 
 ---
