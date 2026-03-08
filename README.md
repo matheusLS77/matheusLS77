@@ -42,3 +42,7 @@
 <p align="center">
   <img src="![snake gif](https://github.com/matheusLS77/matheusLS77/blob/output/github-snake-dark.svg)" alt="snake gif">
 </p>
+
+<p align="center">
+  <img src="https://raw.githubusercontent.com/matheusLS77/matheusLS77/output/github-snake-dark.svg" alt="snake gif">
+</p>
