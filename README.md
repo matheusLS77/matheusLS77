@@ -1,4 +1,4 @@
-<h1 align="center">Hi 👋, I'm Matheus</h1>
+<h1 align="center">𝙷𝚒 👋, 𝙸'𝚖 𝙼𝚊𝚝𝚑𝚎𝚞𝚜</h1>
 
 ---
 
@@ -18,8 +18,9 @@
 ---
 
 ### 📊 GitHub Stats
+
 <p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=matheusLS77&show_icons=true&theme=dark&count_private=true" alt="Matheus GitHub Stats"/>
+  <img src="https://github-readme-stats.vercel.app/api?username=matheusLS77&show_icons=true&theme=dark&hide_title=true&count_private=true" alt="Matheus GitHub Stats"/>
 </p>
 
 ---
