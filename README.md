@@ -23,7 +23,7 @@
 ### 📊 GitHub Stats
 
 <p align="center">
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=matheusLS77&layout=compact&theme=dark" alt="Top Languages"/>
+  <img src="![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=matheusLS77&layout=compact&theme=dark)" alt="Top Languages"/>
 </p>
 
 <p align="center">
