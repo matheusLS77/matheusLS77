@@ -1,7 +1,7 @@
 name: GitHub Snake Game
 
 on:
-  # Executa o workflow diariamente à meia-noite UTC
+  # Executa diariamente à meia-noite UTC
   schedule:
     - cron: "0 0 * * *"
 
@@ -23,9 +23,9 @@ jobs:
       - name: Checkout Repository
         uses: actions/checkout@v3
         with:
-          persist-credentials: false  # evita conflito com o PAT no push
+          persist-credentials: false  # evita conflito com o token
 
-      # 2️⃣ Gera as animações do Snake
+      # 2️⃣ Gerar as animações do Snake
       - name: Generate GitHub Contributions Snake Animations
         uses: Platane/snk@v3
         with:
@@ -37,12 +37,28 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
-      # 3️⃣ Deploy para a branch 'output' usando o PAT
-      - name: Deploy to Output Branch
-        uses: peaceiris/actions-gh-pages@v3
+      # 3️⃣ Commit e push para branch temporária
+      - name: Commit changes to temp branch
+        run: |
+          TEMP_BRANCH="snake-temp"
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git checkout -B $TEMP_BRANCH
+          git add ./dist
+          git commit -m "Update snake animation [skip ci]" || echo "No changes to commit"
+          git push --set-upstream origin $TEMP_BRANCH --force
+        env:
+          GITHUB_TOKEN: ${{ secrets.MY_PAT }}  # PAT com permissão de push
+
+      # 4️⃣ Criar Pull Request automático para branch output
+      - name: Create Pull Request
+        uses: peter-evans/create-pull-request@v5
         with:
-          github_token: ${{ secrets.MY_PAT }} 
-          publish_dir: ./dist
-          publish_branch: output
-          commit_message: "Update snake animation [skip ci]"
-          force_orphan: true  # cria a branch se ainda não existir
+          token: ${{ secrets.MY_PAT }}        # PAT com permissão
+          commit-message: "Update snake animation [skip ci]"
+          branch: snake-temp
+          base: output
+          title: "Update GitHub Snake Animations"
+          body: "Automated PR to update snake animations."
+          labels: automated
+          draft: false
