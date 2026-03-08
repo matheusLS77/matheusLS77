@@ -23,24 +23,25 @@ jobs:
       - name: Checkout Repository
         uses: actions/checkout@v3
         with:
-          persist-credentials: false  # evita conflito com o token
+          persist-credentials: false
 
-      # 2️⃣ Gerar as animações do Snake
+      # 2️⃣ Criar pasta temporária para gerar os arquivos
+      - name: Prepare temporary folder
+        run: |
+          rm -rf dist_temp
+          mkdir dist_temp
+
+      # 3️⃣ Gerar as animações do Snake na pasta temporária
       - name: Generate GitHub Contributions Snake Animations
         uses: Platane/snk@v3
         with:
           github_user_name: ${{ github.repository_owner }}
           outputs: |
-            dist/github-snake.svg
-            dist/github-snake-dark.svg?palette=github-dark
-            dist/ocean.gif?color_snake=orange&color_dots=#bfd6f6,#8dbdff,#64a1f4,#4b91f1,#3c7dd9
+            dist_temp/github-snake.svg
+            dist_temp/github-snake-dark.svg?palette=github-dark
+            dist_temp/ocean.gif?color_snake=orange&color_dots=#bfd6f6,#8dbdff,#64a1f4,#4b91f1,#3c7dd9
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-
-      # 3️⃣ Limpar a pasta dist para evitar conflito de arquivos não rastreados
-      - name: Clean dist folder
-        run: |
-          rm -rf dist/*
 
       # 4️⃣ Commit e push para branch temporária usando PAT
       - name: Commit changes to temp branch
@@ -49,7 +50,7 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git checkout -B $TEMP_BRANCH
-          git add ./dist
+          git add dist_temp
           git commit -m "Update snake animation [skip ci]" || echo "No changes to commit"
           # Configura o remote usando PAT
           git remote set-url origin https://x-access-token:${{ secrets.MY_PAT }}@github.com/${{ github.repository }}.git
