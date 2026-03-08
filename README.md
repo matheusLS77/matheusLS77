@@ -39,6 +39,6 @@
   <a href="mailto:seuemail@example.com"><img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Email"/></a>
 </p>
 
-<p align="center">
+<div align="center">
   ![snake gif](https://github.com/matheusLS77/matheusLS77/blob/output/github-snake-dark.svg)
-</p>
+</div>
