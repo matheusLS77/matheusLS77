@@ -19,14 +19,6 @@
 
 ---
 
-### 📊 GitHub Stats
-
-<p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=matheusLS77&show_icons=true&theme=dark" alt="Matheus GitHub Stats"/>
-</p>
-
----
-
 ### 📫 Connect with Me
 
 - GitHub: [@matheusLS77](https://github.com/matheusLS77)
