@@ -37,7 +37,7 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
-      # 3️⃣ Commit e push para branch temporária
+      # 3️⃣ Commit e push para branch temporária usando PAT
       - name: Commit changes to temp branch
         run: |
           TEMP_BRANCH="snake-temp"
@@ -46,11 +46,13 @@ jobs:
           git checkout -B $TEMP_BRANCH
           git add ./dist
           git commit -m "Update snake animation [skip ci]" || echo "No changes to commit"
+          # Configura o remote com PAT para autenticação HTTPS
+          git remote set-url origin https://x-access-token:${{ secrets.MY_PAT }}@github.com/${{ github.repository }}.git
           git push --set-upstream origin $TEMP_BRANCH --force
         env:
-          GITHUB_TOKEN: ${{ secrets.MY_PAT }}  # PAT com permissão de push
+          MY_PAT: ${{ secrets.MY_PAT }}
 
-      # 4️⃣ Criar Pull Request automático para branch output
+      # 4️⃣ Criar Pull Request automático para a branch output
       - name: Create Pull Request
         uses: peter-evans/create-pull-request@v5
         with:
