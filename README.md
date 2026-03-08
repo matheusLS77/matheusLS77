@@ -20,6 +20,12 @@
 
 ---
 
+<p align="center">
+  <img src="https://github-readme-stats.vercel.app/api?username=matheusLS77&show_icons=true&theme=dark&count_private=true" alt="Matheus GitHub Stats"/>
+</p>
+
+---
+
 ### 📫 Connect with Me
 
 <p align="center">
