@@ -1,7 +1,5 @@
 <p align="center">
-  Hi I'm
-</p>
-<p align="center">
+  Hi I'm<br>
   <img src="https://raw.githubusercontent.com/matheusLS77/matheusLS77/main/assets/nome-github.gif" alt="Hi I'm Matheus" width="500"/>
 </p>
 
